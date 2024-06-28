@@ -1,0 +1,154 @@
+export type BonusCreatedEvent = {
+  event_type: "bonus.created" | "achievement_event.created";
+  data: {
+    id: string;
+    parent_bonus_id: string | null;
+    created_at: string;
+    reason: string;
+    reason_decoded: string;
+    reason_html: string;
+    amount: number;
+    amount_with_currency: string;
+    family_amount: number;
+    value: string;
+    hashtag: string;
+    via: string;
+    editable_until: string;
+    giver: {
+      id: string;
+      short_name: string;
+      full_name: string;
+      display_name: string;
+      username: string;
+      email: string;
+      path: string;
+      full_pic_url: string;
+      profile_pic_url: string;
+      first_name: string;
+      last_name: string;
+      preferred_first_name: string;
+      last_active_at: string;
+      created_at: string;
+      external_unique_id: string;
+      budget_boost: number;
+      user_mode: string;
+      cost_center: string;
+      country: string;
+      time_zone: string;
+      can_receive: boolean;
+      can_give: boolean;
+      give_amounts: number[];
+      suggested_give_amounts: {
+        dataValue: number;
+        name: string;
+      }[];
+      custom_properties: {
+        department: string;
+        location: string;
+        role: string;
+      };
+      status: string;
+      hired_on: string;
+      manager_email: string;
+      client_ids: {
+        slack: string;
+        slack_id: string;
+        slack_display_name: string;
+        slack_home_channel_id: string;
+      };
+      intercom_id: string | null;
+      admin: boolean;
+    };
+    receiver: {
+      id: string;
+      short_name: string;
+      full_name: string;
+      display_name: string;
+      username: string;
+      email: string;
+      path: string;
+      full_pic_url: string;
+      profile_pic_url: string;
+      first_name: string;
+      last_name: string;
+      preferred_first_name: string;
+      last_active_at: string;
+      created_at: string;
+      external_unique_id: string;
+      budget_boost: number;
+      user_mode: string;
+      cost_center: string;
+      country: string;
+      time_zone: string;
+      can_receive: boolean;
+      can_give: boolean;
+      give_amounts: number[];
+      suggested_give_amounts: {
+        dataValue: number;
+        name: string;
+      }[];
+      custom_properties: {
+        department: string;
+        location: string;
+        role: string;
+      };
+      status: string;
+      hired_on: string;
+      manager_email: string;
+      client_ids: {
+        slack: string;
+        slack_id: string;
+        slack_display_name: string;
+        slack_home_channel_id: string;
+      };
+      intercom_id: string | null;
+      admin: boolean;
+    };
+    receivers: {
+      id: string;
+      short_name: string;
+      full_name: string;
+      display_name: string;
+      username: string;
+      email: string;
+      path: string;
+      full_pic_url: string;
+      profile_pic_url: string;
+      first_name: string;
+      last_name: string;
+      preferred_first_name: string;
+      last_active_at: string;
+      created_at: string;
+      external_unique_id: string;
+      budget_boost: number;
+      user_mode: string;
+      cost_center: string;
+      country: string;
+      time_zone: string;
+      can_receive: boolean;
+      can_give: boolean;
+      give_amounts: number[];
+      suggested_give_amounts: {
+        dataValue: number;
+        name: string;
+      }[];
+      custom_properties: {
+        department: string;
+        location: string;
+        role: string;
+      };
+      status: string;
+      hired_on: string;
+      manager_email: string;
+      client_ids: {
+        slack: string;
+        slack_id: string;
+        slack_display_name: string;
+        slack_home_channel_id: string;
+      };
+      intercom_id: string | null;
+      admin: boolean;
+    }[];
+    child_count: number;
+  };
+};
